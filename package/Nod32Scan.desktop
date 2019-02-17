@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=all/all;
+X-KDE-StartupNotify=false
+X-KDE-Priority=TopLevel
+Actions=scanwithNod32;
+
+[Desktop Action scanwithNod32]
+Name=Scan with NOD32
+Exec=konsole --hold -e "bash -c 'echo; echo NOD32 Scan File; echo; echo %F; echo; nod32scan --unsafe --unwanted --clean-mode=none %F'"
+Icon=security-medium
